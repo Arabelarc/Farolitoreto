@@ -1,1 +1,25 @@
 //Colocar aquí clases utilitarias para todo el sitio. Por ejemplo: márgenes, alineación de texto y color de texto.
+.text-white{
+	color:white !important;
+}
+
+$color: blue red orange yellow pink gray skyblue tomato ;
+
+@each $colors in $color {
+	.#{$colors}{
+	background-color: $colors;
+	color: $colors;
+	}
+}
+$moztaza: #F7D358;
+
+.moztaza{
+  background-color:$moztaza;
+}
+/*Formula para height*/
+
+@for $i from 1 through 8{
+  .f-w#{$i*100} {
+    font-weight: (100*$i);
+  }
+}
