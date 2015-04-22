@@ -1,7 +1,177 @@
 //Colocar aquí clases utilitarias para todo el sitio. Por ejemplo: márgenes, alineación de texto y color de texto.
+.bgrd{
+	background-color: #FF6A49;
+}
+.bgcw{
+	background-color: white;
+}
+.text-y{
+	color: #FFBF00;
+}
 .text-white{
 	color:white !important;
 }
+.text-g{
+	color:#9E9D9D !important;
+}
+.back-g{
+	background-color:#9E9D9D !important;
+}
+.text-a{
+	color: #A1A0A0 !important;
+}
+.bg{
+	background-color: #F2F2F2;
+}
+.fe-b{
+	bottom: -35px !important;
+}
+.f2-b{
+	bottom: -55px !important;
+}
+.f4-b{
+	bottom: -57px !important;
+}
+.f5-b{
+	bottom: -103px !important;
+}
+.f6-b{
+	bottom: -83px !important;
+}
+.f-us{
+	bottom: 119px !important;
+}
+.fs-09{
+	font-size: 0.9em;
+}
+.fs12{
+  font-size: 1.2em;
+}
+.fs13{
+  font-size: 1.3em;
+}
+.fs14{
+  font-size: 1.4em;
+}
+.fs28 {
+  font-size: 2.8em;
+}
+.relative{
+	position: relative;
+}
+.absolute{
+	position: absolute;
+}
+.fixed{
+	position: fixed;
+}
+.pd-r{
+	right: 3%;
+}
+
+.top{
+	top: -17px;
+}
+.toplus{
+	top: 29px;
+}
+.p{
+	 padding: 18.9%;
+}
+.padding-79{
+	  padding: 7.9%;
+}
+.pd-bottom{
+	padding-bottom: 2%;
+}
+.pd-bt08{
+	padding-bottom: 0.8%;
+}
+.pd-top0{
+	padding-top: 0% !important;
+}
+.pd-top{
+	padding-top: 5% !important;
+}
+.pdl{
+	padding-left: 0% !important;
+}
+.padr{
+	padding-right: 0% !important;
+}
+.flecha {
+  position: relative;
+  bottom: 30px;
+  text-align: center;
+}
+.oculto{
+	display: none;
+	visibility: none;
+}
+.l-h{
+	line-height: 1.5;
+}
+.ml-mr{
+	margin-left: 1%;
+	margin-right: 1%;;
+}
+.ml{
+	margin-left: 0% !important;
+}
+.mtp{
+	margin-top:3% !important;
+	p{
+		text-align: center;
+	}
+}
+.mtp7 {
+  margin-top: 7% !important;
+}
+.mpt{
+	padding-bottom: 3%;
+}
+.mbt{
+	margin-bottom: 4%;
+}
+.lft{
+	left: -14%;
+}
+/*Formula para z-index*/
+@for $i from 1 through 10{
+  .z#{$i*1} {
+    z-index: (1*$i);
+  }
+}
+/*Formula para height*/
+@for $i from 1 through 100{
+  .h-#{$i*1} {
+    height: (1%*$i);
+  }
+}
+/*Formula para font-size*/
+@for $i from 1 through 10{
+  .f-s#{$i*1} {
+    font-size: (1em*$i);
+  }
+}
+/*Formula para weight*/
+@for $i from 1 through 9{
+  .f-w#{$i*100} {
+    font-weight: (100*$i);
+  }
+ }
+ /*Formula para width%*/
+@for $i from 1 through 10{
+  .width#{$i*10} {
+    width: (10%*$i);
+  }
+ }
+  /*Formula para widthpx*/
+@for $i from 1 through 10{
+  .wipx#{$i*10} {
+    width: (10px*$i);
+  }
+ }
 
 $color: blue red orange yellow pink gray skyblue tomato ;
 
@@ -11,15 +181,17 @@ $color: blue red orange yellow pink gray skyblue tomato ;
 	color: $colors;
 	}
 }
+
 $moztaza: #F7D358;
 
 .moztaza{
   background-color:$moztaza;
 }
-/*Formula para height*/
-
-@for $i from 1 through 8{
-  .f-w#{$i*100} {
-    font-weight: (100*$i);
-  }
+$amarillo: #FFC819;
+.amarillo{
+	background-color: $amarillo;
+}
+$celeste: #28C5E6;
+.celeste {
+	color: $celeste;
 }

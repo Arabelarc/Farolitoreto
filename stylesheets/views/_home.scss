@@ -63,8 +63,8 @@ header{
 	background-color: #FF6A49;
 	color: white;
 	border: 1px;
-  width: 30%;
-  height: 8%;
+  width: 37%;
+  height: 7%;
   border-radius: 15px;
 }
 .boton-perfil-res{
@@ -78,46 +78,37 @@ header{
   height: 55%;
   font-weight: 900;
   border-radius: 6px;
-  left: 65%;
+  left: 60%;
 }
 .boton-perfil:hover{
 	background-color: #f12c00;
 }
 .btn-es{
-	color: #ccc;
+	color: #8B8B8B;
   background-color: #fff;
   border-color: #ccc;
 }
 .btn-in{
-	color: #FFF;
-  background-color: #9E9D9D;
-  border-color: #ccc;
+	position: relative;
+  top: -50px;
+  background: #9E9D9D;
+  padding: 7px 15px;
+  cursor: pointer;
+  float: right;
+  margin: 50px 70px;
 }
 .br-nav-button{
-	border-radius: 10px !Important;
+	border-radius: 50px !Important;
 	margin-right: 10px;
-}
-.pd-r{
-	right: 3%;
-}
-.pd-bottom{
-	padding-bottom: 2%;
-}
-.pd-top{
-	padding-top: 5%;
+	height: 30px;
 }
 .navegacion-pr > a {
   position: relative;
   text-decoration: none;
   color: #9E9D9D;
-  left: -17%;
-  top: 30px;
+  left: -18%;
+  top: 12px;
   font-size: 1.6em;
-}
-.flecha {
-  position: relative;
-  bottom: 30px;
-  text-align: center;
 }
 .imagen-res > img {
 	width: 100%;
@@ -148,7 +139,7 @@ div > span{
 	  font-size: 1.8em;
 	  color: white;
 	  position: absolute;
-	  top: 22%;
+	  top: 10%;
 	  left: 10%;
 	  font-weight: 100;
   }
@@ -182,10 +173,6 @@ div > span{
 	position: relative;
   top: 43%;
   left: 16%;
-}
-.oculto{
-	display: none;
-	visibility: none;
 }
 .linea1{
   width: 175px;
@@ -240,7 +227,7 @@ div > span{
   font-size: 2em;
   font-weight: 600;
   @media (max-width: 800px){
-  	top: 135%;
+  	top: 138%;
   	left: 21%;
   	font-size: 2.5em;
   	font-weight: 400;  
@@ -248,11 +235,11 @@ div > span{
 }
 .evaparrafo {
 	@extend .evaluaciondc;
-	color: #9D9C9C;
+	color: #A1A0A0;
   top: 204%;
-  font-weight: 200;
-  left: 10%;
-  font-size: 1.6em;
+  font-weight: 300;
+  left: 11%;
+  font-size: 1.5em;
   @media (max-width: 800px){
 	  color: #737070;
 	  top: 152%;
@@ -271,7 +258,7 @@ div > span{
 }
 .evaparrafo2 {
 	@extend .evaparrafo;
-	left: 68%;
+	left: 70%;
 	@media (max-width: 800px){
 	  top: 265%;
 	  left: 10%;
@@ -290,7 +277,7 @@ div > span{
 .actperfil {
 	@extend .evaparrafo;
 	top: 249%;
-	left: 39%;
+	left: 40%;
 	 @media (max-width: 800px){
 	  top: 198%;
 	  left: 5%;
@@ -308,10 +295,6 @@ div > span{
 }
 .boton-vermas:hover{
 	background-color:#0088A5;
-}
-.flecha2 {
-	@extend .flecha;
-	bottom: -55px;
 }
 .postulantes {
 	width: 100%;
@@ -331,11 +314,6 @@ div > span{
 		font-size: 2.8em;
   	font-weight: 500;
 	}
-}
-.potencial-txt{
-	color: white;
-	font-weight: 200;
-	font-size: 2em;
 }
 .medio{
 	@extend .borde-medio;
@@ -503,10 +481,6 @@ div > span{
   border: 1px solid;
   margin-bottom:5%;
 }
-.flecha3{
-	@extend .flecha2;
-	bottom: 19px;
-}
 .text-farolito-emp{
 	@extend .text-postu;
 	color:#FF6A49;
@@ -519,9 +493,6 @@ div > span{
 	}
 }
 .sub-text-faro{
-	@extend .potencial-txt;
-	color :#9E9D9D;
-	font-weight: 600;
 	@media (max-width: 500px){
 		font-size: 2.4em;
 	}
@@ -536,14 +507,7 @@ div > span{
   	border-bottom: 3px dashed #FF6A49;
 	}
 }
-.talento-txt {
-	@extend .potencial-txt;
-	color:#9E9D9D;
-	font-size: 1.2em;
-}
 .subtitulos-faro{
-	@extend .sub-text-faro;
-	font-weight: 400;
 	@media (max-width: 500px) {
 		color:  #FF6A49;
 		font-size: 2.5em;
@@ -579,10 +543,6 @@ div > span{
 .contactanos:hover{
 	background-color: #f12c00;
 }
-.flecha4{
-	@extend .flecha;
-	bottom: -57px;
-}
 .centrosedu{
 	background-color:#77D248;
 	width: 100%;
@@ -602,10 +562,6 @@ div > span{
 	@extend .line-dashed;
 	border-bottom: 2px dashed white;
 }
-
-.talento-txt .text-white{
-	@extend .talento-txt;
-}
 .sub-text-faro .text-white{
 	@extend .sub-text-faro;
 }
@@ -620,10 +576,6 @@ div > span{
 }
 .contactanos-green:hover{
 	background-color:#348609;
-}
-.flecha5 {
-	@extend .flecha;
-		bottom: -103px;
 }
 .hoja{
 	width: 64%;
@@ -644,6 +596,7 @@ div > span{
 .text-list-opt{
 	@extend .text-edu;
 	color:#9E9D9D;
+	padding-top: 9%;
 }
 .btn-opt{
 	@extend .oportunidades;
@@ -684,6 +637,263 @@ div > span{
 	  height: 32px;
 	  font-weight: 800;
 }
-.btn-vr-todos:hover{
-	background-color:#424242;
+.btn-vr-todos:hover , .form_text_button:hover {
+	background-color:#424242 !important;
+}
+form {
+    width: 25em;
+    margin: 0 auto; 
+  	@media (max-width:500px){
+  		margin: 3em auto;
+  	}
+  input {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 0.5em;
+    border: 0.1em solid #CCC;
+    font-size: 1.2em !important;
+  	color: #ccc !important;
+    &:focus {
+      outline: 0.1em solid #28C5E6;
+      background: #EDFBDA;
+    }
+    @media (max-width: 500px){
+    	height: 10% !important;
+    	width: 77%;
+    	text-align:center;
+    	font-size: 2em !important;
+		  margin-bottom: 0.9em !important;
+    }
+  }
+}
+footer{
+	@media (max-width: 500px){
+		text-align: center;
+		height: 10% !important;
+	  top: 0px;
+	  position: relative;
+	}
+	span{
+		left: 84%;
+  	top: 14px;
+  	@media (max-width: 500px){
+  		left: 1%;
+  		top: 32px;
+  	}
+	}
+	.social{
+		margin-left:1%;
+		top: -32px;
+		img{
+			margin-left:0.7%;
+		}
+	}
+}
+.blog-text {
+	@media (max-width:500px){
+		background-color: transparent;
+    font-size: 1.3em;
+    text-align: center;
+    padding-left: 0px !important;
+  	padding-right: 0px !important;
+    p , .p ,.res{
+    	color: #9E9D9D !important;
+    	padding: 12.9%;
+    }
+	}
+}
+.vr-tds{
+	@media (max-width: 500px) {
+		width: 63%;
+  	font-size: 1.4em;
+	}
+}
+.consulta{
+	@media (max-width: 500px){
+		font-size: 2.7em;
+	}
+}
+.form_text_button{
+  width: 39% !important;
+  left: 29% !important;
+  top: 14px !important;
+  margin-bottom: 33% !important;
+  @media (max-width: 500px){
+		width: 48% !important;
+	  height: 7% !important;
+	  left: -1% !important;
+	  top: 14px !important;
+  }
+}
+.text-af-form{
+	right: 5%;
+  bottom: 76px;
+}
+/* SOBRE NOSOTROS */
+.nosotros {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/img_nosotros-02.png);
+}
+.logo{
+	top: 13%;
+  left: 3%;
+}
+.pic-fnd{
+	@media (max-width: 500px){
+		width: 54%;
+    margin-left: 23%;
+	}
+	border: 2px solid #A1A0A0;
+  border-radius: 50%;
+  width: 65%;
+  height: 164px;
+  margin-left: 17%;
+	img {
+	  border-radius: inherit;
+	  border: 4px solid white;
+	}
+}
+.pdng{
+	@media (max-width:500px){
+		padding: 0.8% !important;
+	}
+}
+.fun-text{
+	.names{
+		@media (max-width: 500px){
+			color:  #28C5E6 !important;
+			font-size: 3.3em;
+		}
+	}
+	.puesto{
+		@media (max-width: 500px){
+			font-size: 2.5em;
+		}
+	}
+}
+/* BLOG */
+.blog{
+	@media (max-width: 500px) {
+		margin-top: 15% !important;
+	}
+}
+.hline{
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.5rem !important;
+  text-decoration: none;
+}
+.img-prof{
+	right: 34%;
+  top: 6px;
+}
+.img-prof-2{
+	right: 46%;
+  top: 208px;
+}
+.img-2-res {
+  margin-bottom: 9%;
+  margin-top: 7% !important;
+}
+/*LOG IN */
+
+a{
+    outline: 0;
+    text-decoration: none;
+}
+.modal-bg{
+		display: none;
+    position:fixed;
+    left:0;right:0;
+    top:0;bottom:0;
+    z-index:100;
+    background-color:rgba(50,50,50,0.5);
+}
+.form-in{
+    display:block;
+}
+.form-in *{
+    margin:10px;
+}
+.casilla:focus{
+    border:2px solid #28C5E6;
+    outline:0;
+}
+.casilla {
+    width:347px;
+    padding:7px;
+    border:2px solid #ccc ;
+    border-radius:3px;
+   	right: 4%;
+}
+.boton-ingreso {
+  float: right;
+  padding: 8px 12px;
+  margin-top: 15px;
+  background: #28C5E6;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 11px;
+  cursor: pointer;
+  position: relative;
+  left: 1%;
+}
+.boton-ingreso:hover{
+    background-color: #28C5E6;
+}
+#forgot-link{
+  font-size: 1.3em;
+  font-weight: 200;
+  line-height: 1.5em;
+  position: relative;
+  top: -21px;
+  right: 23%;
+  color: #8B8B8B;
+  display: inline-block;
+}
+#forgot-link:hover{
+    color:#28C5E6;
+}
+#modal{ 
+		display: none;
+    position:absolute;
+    background-color: white;
+    top:37%; 
+    left:43%;
+    z-index:101;
+    border-radius:6%;
+    width:527px;
+    height:416px;
+    margin-top:-130px;
+    margin-left:-170px;
+    border: 5px solid #8C8987;
+    box-shadow:0 0 10px 0 rgba(0,0,0,0.3);
+}
+#modal span{
+    display: block;
+    margin-top: 7%;
+    font-size: 3em;
+}
+#close{
+  color: #343434;
+  font-family: serif;
+  font-size: 23px;
+  font-weight: bold;
+  position: absolute;
+  left: 95%;
+  z-index: 5;
+  top: 8px;
+}
+#close:hover{
+    color: gray;
+}
+.text-in{
+  text-decoration: none;
+  color: #8B8B8B;
+  position: absolute;
+  top: 76.6%;
+  left: 49%;
+  font-size: 1.3em;
 }

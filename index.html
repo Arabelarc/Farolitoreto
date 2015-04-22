@@ -8,274 +8,348 @@
 		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 	</head>
 	<body>
-		<div class="container">
-  		<div class="navbar-header">
-  			<button type="button" class=" btn-res btn hidden-lg hidden-md" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-label="Left Align">
-					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-  				<span class="sr-only">Toggle navigation</span>
-  				<span class="icon-bar"></span>
-  				<span class="icon-bar"></span>
-  				<span class="icon-bar"></span>
-  			</button>
-  			<div class="boton-perfil-res hidden-md hidden-lg">CREA TU PERFIL</div>
-  			<a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#"><img src="" alt=""></a>
-  		</div>
-  	</div>
-		<header>
-			<div class="col-lg-12 text-right hidden-xs hidden-sm">
-					<nav class="navegacion-pr">
-					  <a href="">Sobre nosotros |</a> 
-					  <a href="">Oportunidades</a> 
-					</nav>
-					<div class="pd-r text-left btn-group" role="group" aria-label="...">
-					  <div class="btn-group" role="group">
-					    <button type="button" class="btn-es br-nav-button btn btn-default dropdown-toggle " data-toggle="dropdown" aria-expanded="false">ES
-					       <span class="glyphicon glyphicon-chevron-down"></span>
-					    </button>
-					    	<ul class="dropdown-menu" role="menu">
-								   <li><a href="#">Ingles</a></li>
-								   <li><a href="#">Alemán</a></li>
-								   <li><a href="#">Portugues</a></li>
-								</ul>
-					  </div>
-					  <button type="button" class=" btn-in br-nav-button btn btn-default br-nav-button">INGRESAR</button>
-					</div>
-			</div>
-			<div class="container-fluid">
-				<div class="col-sm-6"></div>
-				<div class="col-sm-6 col-xs-12">
-					<div class="img-logo-farolito pd-bottom">
-						<img src="iconos/iconos-20.png" alt="">
-						<h3 class="text-color-first pd-bottom">Identificamos al mejor talento y <tr>maximizamos su potencial</h3>
-						<p class="text-gray pd-bottom">Con una evaluación rigurosa,<span class="hidden-xs hidden-sm">tanto de postulantes como de puestos laborales,</span>identificamos la sinergia óptima entre trabajador y empresa, aumentando la productividad, la permanencia y la felicidad de los trabajadores</p>
-						<button class="boton-perfil hidden-sm hidden-xs">CREA TU PERFIL</button>
+			<section class="">
+				<div class="modal-bg">
+					<div id="modal">
+						<span class="celeste text-center">Ingresa a tu Cuenta<a href="#close" id="close">&#215;</a></span>
+						<form class=" form-in text-center">
+							<input class="casilla relative" id="username" name="username" type="textbox" placeholder="Usuario" required>
+							<input class="casilla relative" id="password" name="password" type="password" placeholder="Contraseña" required>
+							<button class="boton-ingreso" name="submit" id="submit" type="submit">INGRESAR <br></button>
+							<a id="forgot-link" href="#">¿Olvidastee tu contraseña? <br></a>
+							<a id="forgot-link" href="#">¿No estas Registrado? <br> <br> </a>
+							<a class="text-in" href="#">crea tu cuenta aquí</a>
+						</form>
 					</div>
 				</div>
-			</div>
-		</header>
-		<div class="flecha hidden-xs hidden-sm hidden-md">
-			<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
-		</div>
-		<section>
-			<div class="imagen-res hidden-md hidden-lg">
-				<img src="img/foto-landing-09.png" alt="">
-			</div>
-			<div class="row row-space">
-				<div class="col-lg-12 col-xs-12 text-center">
-					<h1 class="text-meto pd-bottom">Nuestra Metodología</h1>
-					<span class="hidden-xs hidden-sm "><p class="hidden-xs hidden-sm "><img class="hidden-xs hidden-sm " src="iconos/iconos-17.png" alt="">Nuestro exámen es 3 veces más fuerte</p> que el proceso interno aplicado por nuestros propios clientes</span> <img class="hidden-xs hidden-sm" src="iconos/iconos-18.png" alt="">
-				</div>
-			</div>
-			<div class="row row-space">
-				<div class="col-md-3">
-					<div class="linea1"></div>
-				</div>
-				<div class="col-lg-6 pd-top">
-					<div class="circulo-afuera-rojo">
-						<div class="circulo-dentro-rojo">
-							<div class="texto-circulo">
-							<h2 class="">Obetenemos el Perfil <br> profesional del postulante <br>	
-								mediante un análisis completo <br> que identifica el 
-								mejor talento <br> para cualquier puesto. <br><br>
-								Nos Basamos en 3 pilares :</h2>
-							</div>
+			</section>
+			<div class="container">
+	  		<div class="navbar-header">
+	  			<button type="button" class=" btn-res btn hidden-lg hidden-md" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-label="Left Align">
+						<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+	  				<span class="sr-only">Toggle navigation</span>
+	  				<span class="icon-bar"></span>
+	  				<span class="icon-bar"></span>
+	  				<span class="icon-bar"></span>
+	  			</button>
+	  			<button class="boton-perfil-res hidden-md hidden-lg">CREA TU PERFIL</button>
+	  			<a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#"><img src="" alt=""></a>
+	  		</div>
+	  	</div>
+			<header>
+				<div class="col-lg-12 text-right hidden-xs hidden-sm">
+						<nav class="navegacion-pr">
+						  <a href="nosotros.html">Sobre nosotros</a> 
+						  <a class="ml-mr" href=""> | </a>
+						  <a href="">Oportunidades</a> 
+						</nav>
+						<div class="top pd-r text-left btn-group" role="group" aria-label="...">
+						  <div class="btn-group" role="group">
+						    <button type="button" class="fs-09 f-w900 btn-es br-nav-button btn btn-default dropdown-toggle " data-toggle="dropdown" aria-expanded="false">ES
+						       <span class="text-center f-w600 glyphicon glyphicon-chevron-down"></span>
+						    </button>
+						    	<ul class="dropdown-menu" role="menu">
+									   <li><a href="#">Ingles</a></li>
+									   <li><a href="#">Alemán</a></li>
+									   <li><a href="#">Portugues</a></li>
+									</ul>
+						  </div>
+						  <button type="button" class="relative text-white fs-09 f-w900 btn-in br-nav-button btn btn-default br-nav-button">INGRESAR</button>
 						</div>
-						<div class="circulo-hover oculto">
-							<h4 class="text-center">"El corazón de <br> nuestra metodología es <br>nuestro propio exámen"</h4>
-							<div class="imagen-hover">
-								<img src="iconos/iconos-19.png" alt="">
-							</div>
+				</div>
+				<div class="container-fluid">
+					<div class="col-sm-6"></div>
+					<div class="col-sm-6 col-xs-12">
+						<div class="img-logo-farolito pd-bottom">
+							<img src="iconos/iconos-20.png" alt="">
+							<h3 class="l-h text-color-first pd-bottom">Identificamos al mejor talento y <tr>maximizamos su potencial</h3>
+							<p class="l-h text-gray pd-bottom">Con una evaluación rigurosa,<span class="hidden-xs hidden-sm">tanto de postulantes como de puestos laborales,</span>identificamos la sinergia óptima entre trabajador y empresa, aumentando la productividad, la permanencia y la felicidad de los trabajadores</p>
+							<button class="boton-perfil hidden-sm hidden-xs">CREA TU PERFIL</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
-					<div class="linea2"></div>
-				</div>
-			</div>
-			<div class="row row-space">
-				<div class="col-md-6"></div>
-				<div class="col-md-6 col-xs-6 borde-medio"></div>
-			</div>
-			<div class="row row-space">
-				<div class="texto-lados-y-abajo">
-					<h5 class="evaluaciondc">Evaluación de <br>competencias</h5>
-					<p class="evaparrafo">Selección de talento que cuenta <br> con las competencias claves <br> para el puesto.</p>
-					<h5 class="evaluaciondp">Evaluación de <br>preferencias</h5>
-					<p class="evaparrafo2">Selección de talento que <br> permanecerá más tiempo por <br> tener preferencias de trabajo <br>  alineadas con el puesto.</p>
-					<h5 class="analisis">Análisis Continuo</h5>
-					<p class="actperfil">Actualización continua del perfil <br> óptimo para cada puesto, que <br> permita incorporar cambios a la <br> economía laboral u operaciones <br> internas que impacten <br> el día a día.</p>
-				</div>
-			</div>
-			<button class="boton-vermas hidden-xs hidden-sm hidden-md">VER MÁS</button>
-		</section>
-		<div class="flecha2 hidden-xs hidden-sm hidden-md">
-			<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
-		</div>
-		<section class="postulantes text-center">
-			<h2 class="text-postu">Farolito para postulantes</h2>
-			<span class="potencial-txt hidden-xs hidden-sm">Alcanza tu potencial profesional con farolito</span>
-			<div class="row row-space">
-				<div class="col-lg-6 col-xs-12">
-					<div class="lineas-post">
-						<div class="line1">
-							<div class="lineo"></div>
-							<img src="iconos/numeros-39.png" alt="">
-							<p class="">Crea tu Perfil</p>
-						</div>
-						<div class="line2">
-							<div class="linetw"></div>
-							<img src="iconos/numeros-37.png" alt="">
-							<p class="">Postula a oportunidades <br> laborales</p>
-						</div>
-						<div class="line3">
-							<div class="linetr"></div>
-							<img src="iconos/numeros-38.png" alt="">
-							<p class="">Mejora tu perfil profesional</p>
-						</div>
-					</div>
-					<img class ="imagen1" src="iconos/iconos-09.png" alt="">
-					<img class ="imagen2"src="iconos/iconos-10.png" alt="">
-					<img class ="imagen3" src="iconos/iconos-11.png" alt="">
-				</div>
-				<div class="col-lg-6 col-xs-12 medio">
-					<div class="">
-						<p class="informacion1">Ingresa tus datos en nuestra <br> página 
-						y forma parte de nuestra <br>
-						comunidad.</p>
-					</div>
-					<div class="">
-						<p class="informacion2">Conoce en minutos si cumples con <br>
-							los requisitos para el puesto. Le <br>
-							enviamos correos con las <br>
-							oportunidades para que cumples <br>
-							con los requisitos.</p>
-					</div>
-					<div class="">
-						<p class="informacion3">
-							Participa en uno de nuestros cursos <br>
-							de Career Coaching y aprende <br>
-							maneras de superar desafíos y salir <br>
-							adelante en el ambiente laboral.
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-12 hidden-xs hidden-sm">
-					<button class="oportunidades">VER OPORTUNIDADES</button>
-				</div>
-			</div>
-		</section>
-		<div class="flecha3 hidden-xs hidden-sm hidden-md">
-			<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
-		</div>
-		<section class="text-center">
-			<h2 class="text-farolito-emp pd-bottom">Farolito para empresas</h2>
-			<h3 class="sub-text-faro pd-bottom ">Contrata al mejor talento</h3>
-			<div class="line-dashed"></div>
-			<span class="talento-txt hidden-xs hidden-sm">Somos el mejor proveedor estratégico para bajar la rotación y subir la <br> productividad de los trabajadores. </span>
-			<div class="row row-space text-center">
-				<div class="col-lg-4 pd-top col-xs-12">
-					<img src="iconos/iconos-03.png" alt="">
-					<h2 class="subtitulos-faro ">Evaluar postulantes</h2>
-					<p class= "text-p-faro pd-top">El Examen Farolito identifica a las <br>personas que no solamente harán <br> bien el trabajo, sino que <br> permanecerán más tiempo en él. <br><a href="">Ver más información</a></p>
-				</div>
-				<div class="col-lg-4 pd-top col-xs-12">
-					<img src="iconos/iconos-04.png" alt="">
-					<h2 class="subtitulos-faro ">Diagnóstico de la rotación</h2>
-					<p class= "text-p-faro pd-top">Revisión de datos manejados por su <br> empresa para identificar a los <br> contribuyentes escondidos de la <br> rotación.</p>
-				</div>
-				<div class="col-lg-4 pd-top col-xs-12">
-					<img src="iconos/iconos-05.png" alt="">
-					<h2 class="subtitulos-faro ">Coaching laboral</h2>
-					<p class= "text-p-faro pd-top">Asesoría dirigida a nuevos <br> trabajadores durante el proceso de <br> inserción.</p>
-				</div>
-				<div class="col-lg-12">
-					<button class="contactanos">CONTÁCTANOS</button>
-				</div>
-			</div>
-		</section>
-		<div class="flecha4 hidden-xs hidden-sm hidden-md">
-			<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
-		</div>
-		<section class="centrosedu text-center">
-			<h2 class="text-edu pd-bottom">Farolito para Centros Educativos</h2>
-			<h3 class="sub-text-edu pd-bottom ">Desarrolla el mejor talento</h3>
-			<div class="line-dashed-edu"></div>
-			<span class="talento-txt text-white hidden-xs hidden-sm">Somos la evaluadora que asegura que cada alumno egrese siendo el <br> mejor profesional que requiere el mercado laboral. </span>
-			<div class="row row-space text-center">
-				<div class="col-lg-4 pd-top col-xs-12">
-					<img src="iconos/iconos-06.png" alt="">
-					<h2 class="text-white sub-text-faro text-white ">Filtro de postulación</h2>
-					<p class= "text-white text-p-faro pd-top">Identificamos a los postulantes con <br> el perfil profesional de alumnos más <br> exitosos, por carrera.</p>
-				</div>
-				<div class="col-lg-4 pd-top col-xs-12">
-					<img src="iconos/iconos-07.png" alt="">
-					<h2 class="text-white sub-text-faro ">Asesoría Integral</h2>
-					<p class= "text-white text-p-faro pd-top">Las características psicométricas de <br> alumnos más exitosos varía por <br>  carrera y tipo de trabajo. Nosotros <br> 
-					recomendamos prácticas y carreras <br> en que el alumna tendrá más éxito.</p>
-				</div>
-				<div class="col-lg-4 pd-top col-xs-12">
-					<img src="iconos/iconos-08.png" alt="">
-					<h2 class="text-white sub-text-faro text-white ">Control de calidad</h2>
-					<p class= "text-white text-p-faro pd-top">Asegurar que cada sucursal y cada <br> profesor brinden la misma calidad de <br> formación, evaluando a todos los <br> alumnos con el mismo examen.</p>
-				</div>
-				<div class="col-lg-12">
-					<button class="contactanos-green">CONTÁCTANOS</button>
-				</div>
-			</div>
-			<div class="flecha5 hidden-xs hidden-sm hidden-md">
+			</header>
+			<div class="flecha f1-b hidden-xs hidden-sm hidden-md">
 				<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
 			</div>
-		</section>
-		<section class="listaoportunidades text-center hidden-sm hidden-xs">
-			<div class="hoja"></div>
-				<div class="col-lg-12">
-					<h2 class="text-list-opt">Lista de Oportunidades</h2>
+			<section>
+				<div class="imagen-res hidden-md hidden-lg">
+					<img src="img/foto-landing-09.png" alt="">
 				</div>
 				<div class="row row-space">
-					<div class="col-lg-2"></div>
-						<div class="col-lg-8">
-							<div class="col-md-6 text-left">
-								<h2 class="sub-opt">Asesor de Servicio</h2>
-								<p class="text-p">Empresa: Consectetuer adipiscing. <br>
-								 Ciudad : Lima <br>
-								 Salario: s/.0 000.00
-								 Horario: 8:00 am -6:00 pm</p>
+					<div class="col-lg-12 col-xs-12 text-center">
+						<h1 class="text-meto pd-bottom">Nuestra Metodología</h1>
+						<span class="hidden-xs hidden-sm "><p class="hidden-xs hidden-sm "><img class="hidden-xs hidden-sm " src="iconos/iconos-17.png" alt="">Nuestro exámen es 3 veces más fuerte</p> que el proceso interno aplicado por nuestros propios clientes</span> <img class="hidden-xs hidden-sm" src="iconos/iconos-18.png" alt="">
+					</div>
+				</div>
+				<div class="row row-space">
+					<div class="col-md-3">
+						<div class="linea1"></div>
+					</div>
+					<div class="col-lg-6 pd-top">
+						<div class="circulo-afuera-rojo">
+							<div class="circulo-dentro-rojo">
+								<div class="texto-circulo">
+								<h2 class="l-h">Obetenemos el Perfil <br> profesional del postulante <br>	
+									mediante un análisis completo <br> que identifica el 
+									mejor talento <br> para cualquier puesto. <br><br>
+									Nos Basamos en 3 pilares :</h2>
+								</div>
 							</div>
-							<div class="col-md-6 pd-top">
-								<button class="btn-opt">VER MÁS</button>
-							</div>
-							<div class="col-md-6 text-left">
-								<h2 class="sub-opt">Practicante de Estadística</h2>
-								<p class="text-p">Empresa: Consectetuer adipiscing. <br>
-									 Ciudad : Lima <br>
-									 Salario: s/.0 000.00
-									 Horario: 8:00 am -6:00 pm</p>						
-							</div>
-							<div class="col-md-6 pd-top">
-								<button class="btn-opt">VER MÁS</button>
-							</div>
-							<div class="col-md-6 text-left">
-								<h2 class="sub-opt">Supervisor de Seguridad</h2>
-								<p class="text-p">
-									 Ciudad : Lima <br>
-									 Salario: s/.0 000.00
-									 Horario: 8:00 am -6:00 pm</p>						
-							</div>
-							<div class="col-md-6 pd-top">
-								<button class="btn-opt">VER MÁS</button>
-							</div>
-							<div class="col-lg-12">
-								<button class="btn-vr-todos">VER TODOS</button>
+							<div class="circulo-hover oculto">
+								<h4 class="text-center">"El corazón de <br> nuestra metodología es <br>nuestro propio exámen"</h4>
+								<div class="imagen-hover">
+									<img src="iconos/iconos-19.png" alt="">
+								</div>
 							</div>
 						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="linea2"></div>
+					</div>
 				</div>
-		</section>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<!-- Javascripts de Bootstrap -->
-		<script src="javascript/b3/collapse.js"></script>
-		<script src="javascript/b3/transition.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
-  </script>
-  <script src="javascripts/app.js" type="text/javascript" charset="utf-8"></script>
+				<div class="row row-space">
+					<div class="col-md-6"></div>
+					<div class="col-md-6 col-xs-6 borde-medio"></div>
+				</div>
+				<div class="row row-space">
+					<div class="texto-lados-y-abajo">
+						<h5 class="evaluaciondc">Evaluación de <br>competencias</h5>
+						<p class="evaparrafo">Selección de talento que cuenta <br> con las competencias claves <br> para el puesto.</p>
+						<h5 class="evaluaciondp">Evaluación de <br>preferencias</h5>
+						<p class="evaparrafo2">Selección de talento que <br> permanecerá más tiempo por <br> tener preferencias de trabajo <br>  alineadas con el puesto.</p>
+						<h5 class="analisis">Análisis Continuo</h5>
+						<p class="actperfil">Actualización continua del perfil <br> óptimo para cada puesto, que <br> permita incorporar cambios a la <br> economía laboral u operaciones <br> internas que impacten <br> el día a día.</p>
+					</div>
+				</div>
+				<button class="boton-vermas hidden-xs hidden-sm hidden-md">VER MÁS</button>
+			</section>
+			<div class="flecha f2-b hidden-xs hidden-sm hidden-md">
+				<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+			</div>
+			<section class="postulantes text-center">
+				<h2 class="text-postu">Farolito para postulantes</h2>
+				<span class="text-white fs-f-w200 hidden-xs hidden-sm">Alcanza tu potencial profesional con farolito</span>
+				<div class="row row-space">
+					<div class="col-lg-6 col-xs-12">
+						<div class="lineas-post">
+							<div class="line1">
+								<div class="lineo"></div>
+								<img src="iconos/numeros-39.png" alt="">
+								<p class="">Crea tu Perfil</p>
+							</div>
+							<div class="line2">
+								<div class="linetw"></div>
+								<img src="iconos/numeros-37.png" alt="">
+								<p class="">Postula a oportunidades <br> laborales</p>
+							</div>
+							<div class="line3">
+								<div class="linetr"></div>
+								<img src="iconos/numeros-38.png" alt="">
+								<p class="">Mejora tu perfil profesional</p>
+							</div>
+						</div>
+						<img class ="imagen1" src="iconos/iconos-09.png" alt="">
+						<img class ="imagen2"src="iconos/iconos-10.png" alt="">
+						<img class ="imagen3" src="iconos/iconos-11.png" alt="">
+					</div>
+					<div class="col-lg-6 col-xs-12 medio">
+						<div class="">
+							<p class="informacion1">Ingresa tus datos en nuestra <br> página 
+							y forma parte de nuestra <br>
+							comunidad.</p>
+						</div>
+						<div class="">
+							<p class="informacion2">Conoce en minutos si cumples con <br>
+								los requisitos para el puesto. Le <br>
+								enviamos correos con las <br>
+								oportunidades para que cumples <br>
+								con los requisitos.</p>
+						</div>
+						<div class="">
+							<p class="informacion3">
+								Participa en uno de nuestros cursos <br>
+								de Career Coaching y aprende <br>
+								maneras de superar desafíos y salir <br>
+								adelante en el ambiente laboral.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-12 hidden-xs hidden-sm">
+						<button class="oportunidades">VER OPORTUNIDADES</button>
+					</div>
+				</div>
+			</section>
+			<div class="flecha f3-b hidden-xs hidden-sm hidden-md">
+				<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+			</div>
+			<section class="text-center">
+				<h2 class="text-farolito-emp pd-bottom">Farolito para empresas</h2>
+				<h3 class="sub-text-faro text-g f-w600 pd-bottom ">Contrata al mejor talento</h3>
+				<div class="line-dashed"></div>
+				<span class="text-g fs13 f-w200 hidden-xs hidden-sm">Somos el mejor proveedor estratégico para bajar la rotación y subir la <br> productividad de los trabajadores. </span>
+				<div class="row row-space text-center">
+						<div class="col-lg-4 pd-top col-xs-12">
+							<img src="iconos/iconos-03.png" alt="">
+							<h2 class="subtitulos-faro text-g f-w400">Evaluar postulantes</h2>
+							<p class= "text-p-faro text-a pd-top">El Examen Farolito identifica a las <br>personas que no solamente harán <br> bien el trabajo, sino que <br> permanecerán más tiempo en él. <br><a href="">Ver más información</a></p>
+						</div>
+						<div class="col-lg-4 pd-top col-xs-12">
+							<img src="iconos/iconos-04.png" alt="">
+							<h2 class="subtitulos-faro text-g f-w400">Diagnóstico de la rotación</h2>
+							<p class= "text-p-faro text-a pd-top">Revisión de datos manejados por su <br> empresa para identificar a los <br> contribuyentes escondidos de la <br> rotación.</p>
+						</div>
+						<div class="col-lg-4 pd-top col-xs-12">
+							<img src="iconos/iconos-05.png" alt="">
+							<h2 class="subtitulos-faro text-g f-w400">Coaching laboral</h2>
+							<p class= "text-p-faro text-a pd-top">Asesoría dirigida a nuevos <br> trabajadores durante el proceso de <br> inserción.</p>
+						</div>
+					<div class="col-lg-12">
+						<button class="contactanos">CONTÁCTANOS</button>
+					</div>
+				</div>
+			</section>
+			<div class="flecha f4-b hidden-xs hidden-sm hidden-md">
+				<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+			</div>
+			<section class="centrosedu text-center">
+				<h2 class="text-edu pd-bottom">Farolito para Centros Educativos</h2>
+				<h3 class="sub-text-edu pd-bottom ">Desarrolla el mejor talento</h3>
+				<div class="line-dashed-edu"></div>
+				<span class="fs13 f-w200 text-white hidden-xs hidden-sm">Somos la evaluadora que asegura que cada alumno egrese siendo el <br> mejor profesional que requiere el mercado laboral. </span>
+				<div class="row row-space text-center">
+					<div class="col-lg-4 pd-top col-xs-12">
+						<img src="iconos/iconos-06.png" alt="">
+						<h2 class="text-white sub-text-faro text-white ">Filtro de postulación</h2>
+						<p class= "text-white text-p-faro pd-top">Identificamos a los postulantes con <br> el perfil profesional de alumnos más <br> exitosos, por carrera.</p>
+					</div>
+					<div class="col-lg-4 pd-top col-xs-12">
+						<img src="iconos/iconos-07.png" alt="">
+						<h2 class="text-white sub-text-faro ">Asesoría Integral</h2>
+						<p class= "text-white text-p-faro pd-top">Las características psicométricas de <br> alumnos más exitosos varía por <br>  carrera y tipo de trabajo. Nosotros <br> 
+						recomendamos prácticas y carreras <br> en que el alumna tendrá más éxito.</p>
+					</div>
+					<div class="col-lg-4 pd-top col-xs-12">
+						<img src="iconos/iconos-08.png" alt="">
+						<h2 class="text-white sub-text-faro text-white ">Control de calidad</h2>
+						<p class= "text-white text-p-faro pd-top">Asegurar que cada sucursal y cada <br> profesor brinden la misma calidad de <br> formación, evaluando a todos los <br> alumnos con el mismo examen.</p>
+					</div>
+					<div class="col-lg-12">
+						<button class="contactanos-green">CONTÁCTANOS</button>
+					</div>
+				</div>
+				<div class="flecha f5-b hidden-xs hidden-sm hidden-md">
+					<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+				</div>
+			</section>
+			<section class="listaoportunidades text-center hidden-md hidden-sm hidden-xs">
+					<div class="hoja"></div>
+					<div class="col-lg-12">
+						<h2 class="text-list-opt ">Lista de Oportunidades</h2>
+					</div>
+					<div class="row row-space">
+						<div class="col-lg-2"></div>
+							<div class="col-lg-8">
+								<div class="col-md-6 text-left">
+									<h2 class="sub-opt">Asesor de Servicio</h2>
+									<p class="text-p text-a">Empresa: Consectetuer adipiscing. <br>
+									 Ciudad : Lima <br>
+									 Salario: s/.0 000.00 <br>
+									 Horario: 8:00 am -6:00 pm</p>
+								</div>
+								<div class="col-md-6 pd-top">
+									<button class="btn-opt">VER MÁS</button>
+								</div>
+								<div class="col-md-6 text-left">
+									<h2 class="sub-opt">Practicante de Estadística</h2>
+									<p class="text-p text-a">Empresa: Consectetuer adipiscing. <br>
+										 Ciudad : Lima <br>
+										 Salario: s/.0 000.00 <br>
+										 Horario: 8:00 am -6:00 pm</p>						
+								</div>
+								<div class="col-md-6 pd-top">
+									<button class="btn-opt">VER MÁS</button>
+								</div>
+								<div class="col-md-6 text-left">
+									<h2 class="sub-opt">Supervisor de Seguridad</h2>
+									<p class="text-p text-a">
+										 Ciudad : Lima <br>
+										 Salario: s/.0 000.00 <br>
+										 Horario: 8:00 am -6:00 pm</p>						
+								</div>
+								<div class="col-md-6 pd-top">
+									<button class="btn-opt">VER MÁS</button>
+								</div>
+								<div class="col-lg-12">
+									<button class="btn-vr-todos">VER TODOS</button>
+								</div>
+							</div>
+					</div>
+			</section>
+			<div class="flecha hidden-xs hidden-sm hidden-md">
+				<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+			</div>
+			<section>
+				<div class="col-lg-12">
+					<h2 class="pd-top0 f-w300 text-list-opt ">Blog Farolito</h2>
+				</div>
+				<div class="row row-space text-center">
+					<div class="col-lg-2"></div>
+					<div class="col-lg-8">
+						<div class="col-lg-4 pd-top col-xs-12 ">
+								<img class="relative toplus"src="iconos/iconos-22.png" alt="">
+							<div class="blog-text amarillo text-left f-w200">
+								<p class= " res text-white p fs12">Lorem ipsum dolor sit <br> amet, consectetur <br> adipisceing elit sed diam <br> nonumy nibh eusimod.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 pd-top col-xs-12 ">
+								<img class="relative toplus"src="iconos/iconos-23.png" alt="">
+							<div class="blog-text bg text-left f-w200">
+								<p class= " res text-g p fs12">Lorem ipsum dolor sit <br> amet, consectetur <br> adipisceing elit sed diam <br> nonumy nibh eusimod.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 pd-top col-xs-12 ">
+								<img class="relative toplus"src="iconos/iconos-23.png" alt="">
+							<div class="blog-text bg text-left f-w200">
+								<p class= " res text-g p fs12">Lorem ipsum dolor sit <br> amet, consectetur <br> adipisceing elit sed diam <br> nonumy nibh eusimod.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2"></div>
+					<div class="col-lg-12 col-xs-12">
+						<button class="mtp ml boton-vermas vr-tds">VER TODOS</button>
+					</div>
+				</div>
+			</section>
+			<div class="flecha z2 f6-b hidden-xs hidden-sm hidden-md">
+				<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+			</div>
+			<section class="text-center mtp bg" >
+				<div class="col-lg-12 bg ">
+					<h2 class="f-w300 text-list-opt mbt consulta">¿Tienes alguna consulta?</h2>
+				</div>
+				<form class="bg">
+    			<input class="h-5" type="text" name="Nombre" value="Nombre" />
+    			<input class="h-5" type="text" name="Correo" value="Correo" autocomplete="off" />
+    			<input class="h-15" type="text" name="Correo" value="Escribe aquí tu mensaje"/>
+    			<button class="form_text_button back-g btn-vr-todos">ENVIAR</button>
+				</form>
+				<span class="text-af-form text-g text-left fs12 relative f-w600"> o llamanos al +51 32660564</span>
+			</section>
+			<footer class="h-6 back-g">
+				<span class="text-white f-w600 f-s1 text-right relative ">Todos los Derechos Reservados</span>
+			 	<div class="social top relative">
+					<img src="iconos/iconos-12.png" alt="">
+					<img src="iconos/iconos-13.png" alt="">
+					<img src="iconos/iconos-14.png" alt="">
+			 	</div>
+			</footer>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+			<!-- Javascripts de Bootstrap -->
+			<script src="javascript/b3/collapse.js"></script>
+			<script src="javascript/b3/transition.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
+	  	</script>
+	  	<script src="javascripts/app.js" type="text/javascript" charset="utf-8"></script>
 	</body>	
 </html>	

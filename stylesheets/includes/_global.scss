@@ -1,1 +1,11 @@
 // Son los estilos personalizados que se repiten en todas las vistas, por ejemplo, el header o el footer del sitio.
+
+.bg-header-nav{
+	background: #F0FBFD !important;
+}
+.dashed{
+  border-bottom: 2px dashed #ccc;
+  @media (max-width: 500px){
+ 		border-bottom: none;
+  }
+}
