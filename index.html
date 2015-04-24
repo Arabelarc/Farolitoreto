@@ -24,7 +24,32 @@
 				</div>
 			</section>
 			<div class="container">
-	  		<div class="navbar-header">
+	  		<div class="navbar-header navbar-default hidden-sm hidden-xs">
+	  			<div class="imagen-nav nav ">
+	  				<a href="index.html"><img class="relative" src="iconos/logo-farolito-114x40.png" alt=""></a>
+	  			</div>
+					<div class="col-lg-12 text-right hidden-xs hidden-sm">
+							<nav class="navegacion-pr-2">
+							  <a href="nosotros.html">Sobre nosotros</a> 
+							  <a class="ml-mr" href=""> | </a>
+							  <a href="">Oportunidades</a> 
+							</nav>
+							<div class="top-nv-2 pd-r text-left btn-group" role="group" aria-label="...">
+							  <div class="btn-group" role="group">
+							    <button type="button" class="fs-09 f-w900 btn-es br-nav-button btn btn-default dropdown-toggle " data-toggle="dropdown" aria-expanded="false">ES
+							       <span class="text-center f-w600 glyphicon glyphicon-chevron-down"></span>
+							    </button>
+							    	<ul class="dropdown-menu" role="menu">
+										   <li><a href="#">Ingles</a></li>
+										   <li><a href="#">Alemán</a></li>
+										   <li><a href="#">Portugues</a></li>
+										</ul>
+							  </div>							  
+							  <button type="button" class="relative text-white fs-09 f-w900 btn-in br-nav-button btn btn-default br-nav-button">INGRESAR</button>
+							</div>
+					</div>
+	  		</div>
+	  		<div class="navbar-default navbar-header-movil">
 	  			<button type="button" class=" btn-res btn hidden-lg hidden-md" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-label="Left Align">
 						<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 	  				<span class="sr-only">Toggle navigation</span>
@@ -32,6 +57,11 @@
 	  				<span class="icon-bar"></span>
 	  				<span class="icon-bar"></span>
 	  			</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Ingles</a></li>
+						<li><a href="#">Alemán</a></li>
+						<li><a href="#">Portugues</a></li>
+			    </ul>
 	  			<button class="boton-perfil-res hidden-md hidden-lg">CREA TU PERFIL</button>
 	  			<a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#"><img src="" alt=""></a>
 	  		</div>
@@ -41,7 +71,7 @@
 						<nav class="navegacion-pr">
 						  <a href="nosotros.html">Sobre nosotros</a> 
 						  <a class="ml-mr" href=""> | </a>
-						  <a href="">Oportunidades</a> 
+						  <a href="#oportunidades">Oportunidades</a> 
 						</nav>
 						<div class="top pd-r text-left btn-group" role="group" aria-label="...">
 						  <div class="btn-group" role="group">
@@ -70,16 +100,16 @@
 				</div>
 			</header>
 			<div class="flecha f1-b hidden-xs hidden-sm hidden-md">
-				<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+				<a id="arrow" href="#metodologia"><img class="arrow" src="iconos/iconos-15.png" alt=""></a>
 			</div>
-			<section>
+			<section id="metodologia">
 				<div class="imagen-res hidden-md hidden-lg">
 					<img src="img/foto-landing-09.png" alt="">
 				</div>
 				<div class="row row-space">
 					<div class="col-lg-12 col-xs-12 text-center">
 						<h1 class="text-meto pd-bottom">Nuestra Metodología</h1>
-						<span class="hidden-xs hidden-sm "><p class="hidden-xs hidden-sm "><img class="hidden-xs hidden-sm " src="iconos/iconos-17.png" alt="">Nuestro exámen es 3 veces más fuerte</p> que el proceso interno aplicado por nuestros propios clientes</span> <img class="hidden-xs hidden-sm" src="iconos/iconos-18.png" alt="">
+						<span class="hidden-xs hidden-sm "><p class="hidden-xs hidden-sm "><img class="hidden-xs hidden-sm text-g" src="iconos/iconos-17.png" alt="">Nuestro exámen es 3 veces más fuerte</p> que el proceso interno aplicado por nuestros propios clientes</span> <img class=" relative hidden-xs hidden-sm" src="iconos/iconos-18.png" alt="">
 					</div>
 				</div>
 				<div class="row row-space">
@@ -87,19 +117,19 @@
 						<div class="linea1"></div>
 					</div>
 					<div class="col-lg-6 pd-top">
-						<div class="circulo-afuera-rojo">
-							<div class="circulo-dentro-rojo">
-								<div class="texto-circulo">
-								<h2 class="l-h">Obetenemos el Perfil <br> profesional del postulante <br>	
-									mediante un análisis completo <br> que identifica el 
-									mejor talento <br> para cualquier puesto. <br><br>
-									Nos Basamos en 3 pilares :</h2>
+						<div class="circulo-exterior">
+							<div class="circulo-interior">
+								<div class="text-circle">
+									<h2 class="absolute text-white text-center f-w100 l-h">Obetenemos el Perfil <br> profesional del postulante <br>	
+										mediante un análisis completo <br> que identifica el 
+										mejor talento <br> para cualquier puesto. <br><br>
+										Nos Basamos en 3 pilares :</h2>
 								</div>
-							</div>
-							<div class="circulo-hover oculto">
-								<h4 class="text-center">"El corazón de <br> nuestra metodología es <br>nuestro propio exámen"</h4>
-								<div class="imagen-hover">
-									<img src="iconos/iconos-19.png" alt="">
+								<div class="text-circle-hover hidden">
+									<h4 class="absolute text-g f-s2 text-center">"El corazón de <br> nuestra metodología es <br>nuestro propio exámen"</h4>
+									<div class="imagen-hover">
+										<img src="iconos/iconos-19.png" alt="">
+									</div>
 								</div>
 							</div>
 						</div>
@@ -125,11 +155,11 @@
 				<button class="boton-vermas hidden-xs hidden-sm hidden-md">VER MÁS</button>
 			</section>
 			<div class="flecha f2-b hidden-xs hidden-sm hidden-md">
-				<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+				<a id="arrow" href="#postulantes"><img src="iconos/iconos-15.png" alt=""></a>
 			</div>
-			<section class="postulantes text-center">
+			<section id="postulantes" class="postulantes text-center">
 				<h2 class="text-postu">Farolito para postulantes</h2>
-				<span class="text-white fs-f-w200 hidden-xs hidden-sm">Alcanza tu potencial profesional con farolito</span>
+				<span class="text-white f-s2 f-w200 hidden-xs hidden-sm">Alcanza tu potencial profesional con farolito</span>
 				<div class="row row-space">
 					<div class="col-lg-6 col-xs-12">
 						<div class="lineas-post">
@@ -181,9 +211,9 @@
 				</div>
 			</section>
 			<div class="flecha f3-b hidden-xs hidden-sm hidden-md">
-				<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+				<a id="arrow" href="#empresas"><img src="iconos/iconos-15.png" alt=""></a>
 			</div>
-			<section class="text-center">
+			<section id="empresas" class="text-center">
 				<h2 class="text-farolito-emp pd-bottom">Farolito para empresas</h2>
 				<h3 class="sub-text-faro text-g f-w600 pd-bottom ">Contrata al mejor talento</h3>
 				<div class="line-dashed"></div>
@@ -210,9 +240,9 @@
 				</div>
 			</section>
 			<div class="flecha f4-b hidden-xs hidden-sm hidden-md">
-				<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+				<a id="arrow" href="#educativos"><img src="iconos/iconos-15.png" alt=""></a>
 			</div>
-			<section class="centrosedu text-center">
+			<section id="educativos" class="centrosedu text-center">
 				<h2 class="text-edu pd-bottom">Farolito para Centros Educativos</h2>
 				<h3 class="sub-text-edu pd-bottom ">Desarrolla el mejor talento</h3>
 				<div class="line-dashed-edu"></div>
@@ -239,10 +269,10 @@
 					</div>
 				</div>
 				<div class="flecha f5-b hidden-xs hidden-sm hidden-md">
-					<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+					<a id="arrow" href="#oportunidades"><img src="iconos/iconos-15.png" alt=""></a>
 				</div>
 			</section>
-			<section class="listaoportunidades text-center hidden-md hidden-sm hidden-xs">
+			<section id="oportunidades" class="listaoportunidades text-center hidden-md hidden-sm hidden-xs">
 					<div class="hoja"></div>
 					<div class="col-lg-12">
 						<h2 class="text-list-opt ">Lista de Oportunidades</h2>
@@ -287,9 +317,9 @@
 					</div>
 			</section>
 			<div class="flecha hidden-xs hidden-sm hidden-md">
-				<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+				<a id="arrow" href="#blog"><img src="iconos/iconos-15.png" alt=""></a>
 			</div>
-			<section>
+			<section id="blog">
 				<div class="col-lg-12">
 					<h2 class="pd-top0 f-w300 text-list-opt ">Blog Farolito</h2>
 				</div>
@@ -317,14 +347,14 @@
 					</div>
 					<div class="col-lg-2"></div>
 					<div class="col-lg-12 col-xs-12">
-						<button class="mtp ml boton-vermas vr-tds">VER TODOS</button>
+						<button class="mtp ml boton-vermas vr-tds"><a class="textdeco text-white"  href="Blog.html">VER TODOS</a></button>
 					</div>
 				</div>
 			</section>
 			<div class="flecha z2 f6-b hidden-xs hidden-sm hidden-md">
-				<a href="#"><img src="iconos/iconos-15.png" alt=""></a>
+				<a id="arrow" href="#contacto"><img src="iconos/iconos-15.png" alt=""></a>
 			</div>
-			<section class="text-center mtp bg" >
+			<section id="contacto" class="text-center mtp bg" >
 				<div class="col-lg-12 bg ">
 					<h2 class="f-w300 text-list-opt mbt consulta">¿Tienes alguna consulta?</h2>
 				</div>
@@ -339,17 +369,33 @@
 			<footer class="h-6 back-g">
 				<span class="text-white f-w600 f-s1 text-right relative ">Todos los Derechos Reservados</span>
 			 	<div class="social top relative">
-					<img src="iconos/iconos-12.png" alt="">
+					<a href="https://www.facebook.com/vivafarolito"><img src="iconos/iconos-12.png" alt=""></a>
 					<img src="iconos/iconos-13.png" alt="">
 					<img src="iconos/iconos-14.png" alt="">
 			 	</div>
 			</footer>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 			<!-- Javascripts de Bootstrap -->
-			<script src="javascript/b3/collapse.js"></script>
-			<script src="javascript/b3/transition.js"></script>
+			<script src="javascripts/b3/collapse.js"></script>
+			<script src="javascripts/b3/transition.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
 	  	</script>
 	  	<script src="javascripts/app.js" type="text/javascript" charset="utf-8"></script>
+	  	<script>
+					$(function() {
+		  			$('a[href*=#]:not([href=#])').click(function() {
+		    			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      			var target = $(this.hash);
+		      			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      			if (target.length) {
+		        			$('html,body').animate({
+		          			scrollTop: target.offset().top
+		        			}, 1000);
+		        			return false;
+		      			}
+		    			}
+		  			});
+					});
+			</script>
 	</body>	
 </html>	

@@ -1,11 +1,3 @@
-/*
-var $circulorojo = $('.circulo-dentro-rojo');
-	$circulorojo.hover(function(){
-		$('.circulo-afuera-rojo').toggleClass('active');
-		$('.texto-circulo').toggleClass('hidden');
-		$('.circulo-hover').toggleClass('hidden');
-	});
-*/
 /*LOG IN*/
 $('.btn-in').click(function(){
 		  $('.modal-bg').fadeIn();
@@ -17,12 +9,19 @@ $('.btn-in').click(function(){
 		  return false;
 		});
 
-$(document).ready(function(){
-    $(".circulo-afuera-rojo").mouseout(function(){
-        $(".circulo-dentro-rojo").show());
-    });
-    $(".circulo-hover").mouseover(function(){
-        $("h4").show();
-        $(".imagen-hover").show();
-    });
-});
+/*SCROLL DOWN MENU*/
+	$(window).scroll(function(){
+		var position = $(this).scrollTop();
+		if (position > 658) {
+			$(".navbar-header").fadeIn("navegacion");
+		}
+			else if (position < 658) {
+				$(".navbar-header").fadeOut("navegacion");
+		}
+	});
+/*HOVER CIRCLE*/
+$('.circulo-exterior').hover(function() {
+		$(".text-circle").toggleClass('hidden');
+		$(".text-circle-hover").toggleClass("hidden");
+	});
+

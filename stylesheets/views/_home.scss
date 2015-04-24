@@ -30,7 +30,6 @@ header{
 	}
 }
 .img-logo-farolito {
-	margin-top: 14%;
 	text-align: center;
 }
 .text-color-first {
@@ -46,16 +45,29 @@ header{
 	margin-left: 14%;
   margin-right: 14%;
 }
+.navbar-header-movil{
+	background-color: transparent;
+	position: fixed;
+	width: 100%;
+  @media (max-width: 500px){
+  	background-color:#F0FBFD;
+		z-index: 10;
+		left: 0;
+	  height: 9%;
+  }
+}
 .navbar-header{
 	background-color:#F0FBFD;
 	position: fixed;
 	width: 100%;
 	z-index: 10;
+	left: 0;
+  height: 9%;
 }
 .btn-res{
 	background-color: transparent;
   position: absolute;
-  top: 2%;
+  top: 11%;
   font-size: 1.9em;
   color: #9E9D9D;
 }
@@ -110,6 +122,14 @@ header{
   top: 12px;
   font-size: 1.6em;
 }
+.navegacion-pr-2 > a {
+  position: relative;
+  text-decoration: none;
+  color: #9E9D9D;
+  left: -18%;
+  top: -28px;
+  font-size: 1.6em;
+}
 .imagen-res > img {
 	width: 100%;
 }
@@ -128,27 +148,23 @@ div > span{
 		color: #FF6A49;
 	}
 }
-.circulo-afuera-rojo{
-	border-radius: 50%;
+.circulo-exterior {
+  border-radius: 50%;
   height: 415px;
   width: 66%;
   margin: 0 auto;
   background-color: #FF6A49;
-  h2{
-	  text-align: center;
-	  font-size: 1.8em;
-	  color: white;
-	  position: absolute;
-	  top: 10%;
-	  left: 10%;
-	  font-weight: 100;
-  }
   @media (max-width: 800px){
-  	display: none;
+    display: none;
   }
 }
-.circulo-dentro-rojo{
-	border: 4px dashed white;
+.circulo-exterior:hover {
+  background-color:white;
+  border-radius:50%;
+}
+
+.circulo-interior {
+  border: 4px dashed white;
   border-radius: 50%;
   width: 98%;
   top: 1%;
@@ -157,21 +173,31 @@ div > span{
   position: relative;
   z-index: 2;
 }
-.circulo-hover{
-	@extend .circulo-dentro-rojo;
-	border: 4px dashed #FF6A49;
-	top: -97.2%;
+.circulo-interior:hover {
+  border: 4px dashed #FF6A49;
+  border-radius:50%;
+}
+.text-circle{
+  h2{
+    font-size: 1.8em;
+    top: 10%;
+    left: 10%;
+  }
+}
+.text-circle-hover{
+  top: -97.2%;
   left: 1%;
-  z-index: 1;
-	h4{
-		@extend h2;
-		color: #2F2C2C !important;
-  	left: 19% !important;
-	}
+  h4{
+    top: 10%;
+    left: 14%;
+    color: #4F4747;
+  }
+}
+.text-circle-hover:hover{
 }
 .imagen-hover{
-	position: relative;
-  top: 43%;
+  position: relative;
+  top: 169px;
   left: 16%;
 }
 .linea1{
@@ -222,7 +248,7 @@ div > span{
 	color: #FF6A49;
 	position: absolute;
   text-align: center;
-  top: 190%;
+  top: 193%;
   left: 15%;
   font-size: 2em;
   font-weight: 600;
@@ -236,7 +262,7 @@ div > span{
 .evaparrafo {
 	@extend .evaluaciondc;
 	color: #A1A0A0;
-  top: 204%;
+  top: 206%;
   font-weight: 300;
   left: 11%;
   font-size: 1.5em;
@@ -267,7 +293,7 @@ div > span{
 }
 .analisis {
 	@extend .evaluaciondc;
-	top: 240%;
+	top: 245%;
   left: 42%;
   @media (max-width: 800px){
   	top: 188%;
@@ -276,7 +302,7 @@ div > span{
 }
 .actperfil {
 	@extend .evaparrafo;
-	top: 249%;
+	top: 252%;
 	left: 40%;
 	 @media (max-width: 800px){
 	  top: 198%;
@@ -661,7 +687,7 @@ form {
     	height: 10% !important;
     	width: 77%;
     	text-align:center;
-    	font-size: 2em !important;
+    	font-size:1.4em !important;
 		  margin-bottom: 0.9em !important;
     }
   }
@@ -729,72 +755,77 @@ footer{
 	right: 5%;
   bottom: 76px;
 }
-/* SOBRE NOSOTROS */
-.nosotros {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../img/img_nosotros-02.png);
+/*FACCEBOOK BUTTON SHARE*/
+#buttons {
+  left: 52%;
+  top: -129px;
 }
-.logo{
-	top: 13%;
-  left: 3%;
+.button {
+    background: #DCE0E0;
+    position: relative;
+    display: block;
+    float: left;
+    height: 40px;
+    margin: 0 7px;
+    overflow: hidden;
+    width: 150px;
+    border-radius: 3px;
 }
-.pic-fnd{
-	@media (max-width: 500px){
-		width: 54%;
-    margin-left: 23%;
-	}
-	border: 2px solid #A1A0A0;
-  border-radius: 50%;
-  width: 65%;
-  height: 164px;
-  margin-left: 17%;
-	img {
-	  border-radius: inherit;
-	  border: 4px solid white;
-	}
+
+.icon {
+    display: block;
+    float: left;
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    vertical-align: top;
+    width: 38px;
+    border-radius: 3px 0px 0px 3px;
+    text-align: center;
 }
-.pdng{
-	@media (max-width:500px){
-		padding: 0.8% !important;
-	}
+
+.icon i {
+    color: #fff;
+    line-height: 42px;
 }
-.fun-text{
-	.names{
-		@media (max-width: 500px){
-			color:  #28C5E6 !important;
-			font-size: 3.3em;
-		}
-	}
-	.puesto{
-		@media (max-width: 500px){
-			font-size: 2.5em;
-		}
-	}
+
+.slide {
+    z-index: 2;
+    display: block;
+    margin: 0;
+    height: 100%;
+    left: 38px;
+    position: absolute;
+    width: 112px;
+    border-radius: 0px 3px 3px 0px;
 }
-/* BLOG */
-.blog{
-	@media (max-width: 500px) {
-		margin-top: 15% !important;
-	}
+
+.slide p > a {
+    text-decoration: none;
+    font-family: Open Sans;
+    font-weight: 400;
+    border-left: 1px solid #fff;
+    border-left: 1px solid rgba(255,255,255,0.35);
+    color: #fff;
+    font-size: 16px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 100%;
 }
-.hline{
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 0.5rem !important;
-  text-decoration: none;
+
+
+.facebook iframe {
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    z-index: 1;
 }
-.img-prof{
-	right: 34%;
-  top: 6px;
-}
-.img-prof-2{
-	right: 46%;
-  top: 208px;
-}
-.img-2-res {
-  margin-bottom: 9%;
-  margin-top: 7% !important;
+.facebook .icon, .facebook .slide {
+    background: #305c99;
 }
 /*LOG IN */
 
@@ -896,4 +927,21 @@ a{
   top: 76.6%;
   left: 49%;
   font-size: 1.3em;
+}
+/* NAVEGACION */
+.navegacion{
+  background: #F0FBFD !important;
+  height: 9%;
+  width: 100%;
+  left: 0%;
+}
+.imagen-nav{
+	img{
+		left: 1%;
+	  top: 6px;
+  }
+}
+/*INGRESO*/
+.text-in-res{
+  bottom: 76px;
 }

@@ -5,6 +5,9 @@
 .bgcw{
 	background-color: white;
 }
+.bgcsky{
+	background-color:#28C5E6 !important;
+}
 .text-y{
 	color: #FFBF00;
 }
@@ -12,10 +15,10 @@
 	color:white !important;
 }
 .text-g{
-	color:#9E9D9D !important;
+	color: #989898 !important;
 }
 .back-g{
-	background-color:#9E9D9D !important;
+	background-color: #989898 !important;
 }
 .text-a{
 	color: #A1A0A0 !important;
@@ -51,10 +54,19 @@
   font-size: 1.3em;
 }
 .fs14{
-  font-size: 1.4em;
+  font-size: 1.4em !important;
+}
+.fs15{
+	font-size: 1.5em;
+}
+.fs22{
+	font-size: 2.2em !important;
 }
 .fs28 {
   font-size: 2.8em;
+}
+.textdeco{
+	text-decoration: none;
 }
 .relative{
 	position: relative;
@@ -68,9 +80,18 @@
 .pd-r{
 	right: 3%;
 }
-
+.top-nv-2{
+	top: -56px;
+}
 .top{
 	top: -17px;
+}
+.top14 {
+  top: -14px;
+}
+
+.top12{
+	top: 12px;
 }
 .toplus{
 	top: 29px;
@@ -84,8 +105,14 @@
 .pd-bottom{
 	padding-bottom: 2%;
 }
+.mpt{
+	padding-bottom: 3%;
+}
 .pd-bt08{
 	padding-bottom: 0.8%;
+}
+.pd-bottom8 {
+  padding-bottom: 8%;
 }
 .pd-top0{
 	padding-top: 0% !important;
@@ -103,10 +130,6 @@
   position: relative;
   bottom: 30px;
   text-align: center;
-}
-.oculto{
-	display: none;
-	visibility: none;
 }
 .l-h{
 	line-height: 1.5;
@@ -127,8 +150,11 @@
 .mtp7 {
   margin-top: 7% !important;
 }
-.mpt{
-	padding-bottom: 3%;
+.mtp9 {
+  margin-top: 9% !important;
+}
+.mtp15 {
+  margin-top: 15% !important;
 }
 .mbt{
 	margin-bottom: 4%;
@@ -151,7 +177,7 @@
 /*Formula para font-size*/
 @for $i from 1 through 10{
   .f-s#{$i*1} {
-    font-size: (1em*$i);
+    font-size: (1em*$i !important);
   }
 }
 /*Formula para weight*/
@@ -163,7 +189,7 @@
  /*Formula para width%*/
 @for $i from 1 through 10{
   .width#{$i*10} {
-    width: (10%*$i);
+    width: (10%*$i !important);
   }
  }
   /*Formula para widthpx*/

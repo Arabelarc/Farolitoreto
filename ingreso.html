@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Farolito</title>
+		<meta charset="utf-8">
+		<!-- Responsiveness -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	</head>
+	<body>
+			<div class="container">
+	  		<div class="navbar-default navbar-header-movil">
+	  			<button type="button" class=" btn-res btn hidden-lg hidden-md" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-label="Left Align">
+						<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+	  				<span class="sr-only">Toggle navigation</span>
+	  				<span class="icon-bar"></span>
+	  				<span class="icon-bar"></span>
+	  				<span class="icon-bar"></span>
+	  			</button>
+	  			<div class="logo-res hidden-lg hidden-md">
+	  				<img src="iconos/logo-farolito-114x40.png" alt="">
+	  			</div>
+	  			<button class="boton-perfil-res hidden-md hidden-lg">CREA TU PERFIL</button>
+	  			<a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#"><img src="" alt=""></a>
+	  		</div>
+	  	</div>
+			<section id="contacto" class="mtp15 text-center mtp bg" >
+				<div class="col-lg-12 bg ">
+					<h2 class="f-w500 fs28 l-h pd-top mbt celeste">Ingresa a tu <br>Cuenta</h2>
+				</div>
+				<form class="bg">
+    			<input class="h-5" type="text" name="Usuario" value="Usuario" />
+    			<input class="h-5" type="text" name="Contraseña" value="Contraseña" autocomplete="off" />
+    			<button class="form_text_button fs14 bgcsky btn-vr-todos">INGRESAR</button>
+				</form>
+				<span class="text-in-res text-g text-center f-s2 relative f-w200">¿Olvidaste tu contraseña? <br></span>
+				<span class="text-in-res text-g text-center f-s2 relative f-w200">¿No estas registrado? <br></span>
+				<span class="text-in-res text-g text-center f-s2 relative f-w200">crea tu cuenta aquí</span>
+			</section>
+			<footer class="h-6 back-g">
+				<span class="text-white f-w600 f-s1 text-right relative ">Todos los Derechos Reservados</span>
+			 	<div class="social top relative">
+					<a href="https://www.facebook.com/vivafarolito"><img src="iconos/iconos-12.png" alt=""></a>
+					<img src="iconos/iconos-13.png" alt="">
+					<img src="iconos/iconos-14.png" alt="">
+			 	</div>
+			</footer>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+			<!-- Javascripts de Bootstrap -->
+			<script src="javascript/b3/collapse.js"></script>
+			<script src="javascript/b3/transition.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
+	  	</script>
+	  	<script src="javascripts/app.js" type="text/javascript" charset="utf-8"></script>
+	  	<script>
+					$(function() {
+		  			$('a[href*=#]:not([href=#])').click(function() {
+		    			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      			var target = $(this.hash);
+		      			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      			if (target.length) {
+		        			$('html,body').animate({
+		          			scrollTop: target.offset().top
+		        			}, 1000);
+		        			return false;
+		      			}
+		    			}
+		  			});
+					});
+			</script>
+	</body>	
+</html>	
