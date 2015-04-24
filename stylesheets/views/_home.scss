@@ -151,7 +151,7 @@ div > span{
 .circulo-exterior {
   border-radius: 50%;
   height: 415px;
-  width: 66%;
+  width: 415px;
   margin: 0 auto;
   background-color: #FF6A49;
   @media (max-width: 800px){
@@ -166,7 +166,7 @@ div > span{
 .circulo-interior {
   border: 4px dashed white;
   border-radius: 50%;
-  width: 98%;
+  width: 407px;
   top: 1%;
   left: 1%;
   height: 406px;
@@ -604,12 +604,13 @@ div > span{
 	background-color:#348609;
 }
 .hoja{
-	width: 64%;
-  position: absolute;
+  width: 64%;
+  position: relative;
   background-color: white;
   height: 827px;
   bottom: -816%;
-  left: 18%;
+  left: 2%;
+  top: -124px;
   -webkit-box-shadow: 0px 0px 17px 6px rgba(50, 50, 49, 0.64);
   -moz-box-shadow: 0px 0px 17px 6px rgba(50, 50, 49, 0.64);
   box-shadow: 0px 0px 17px 6px rgba(50, 50, 49, 0.64);
