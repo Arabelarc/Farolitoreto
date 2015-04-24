@@ -7057,6 +7057,59 @@ a {
 .text-in-res {
   bottom: 76px; }
 
+/*MENU MOVIL*/
+#slider-left {
+  width: 100%;
+  height: 100%;
+  background-color: #4ccdde;
+  position: fixed;
+  top: 0;
+  right: -0;
+  transform: translateX(-100%);
+  z-index: 200;
+  transition: transform 0.6s ease; }
+  #slider-left nav ul {
+    margin-left: -42px;
+    list-style: none; }
+    #slider-left nav ul li {
+      border-bottom: 2px dashed #fff;
+      padding: 5%;
+      font-size: 27px; }
+      #slider-left nav ul li:nth-child(6) {
+        border: none; }
+  #slider-left nav ul li:hover {
+    background: #FF6A49; }
+  #slider-left .container-toggle {
+    background-color: #F0FBFD;
+    height: 60px; }
+    #slider-left .container-toggle .toggle-menu-m {
+      border: none;
+      position: absolute;
+      left: 25px;
+      top: 27px;
+      list-style-type: none;
+      cursor: pointer;
+      transform: translateX(0);
+      z-index: 210;
+      transition: transform 0.6s ease; }
+      #slider-left .container-toggle .toggle-menu-m li {
+        height: auto;
+        border: none; }
+        #slider-left .container-toggle .toggle-menu-m li .toggle-menu-bar {
+          display: block;
+          width: 25px;
+          height: 3px;
+          background-color: #9E9D9D;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          margin-bottom: 3px; }
+        #slider-left .container-toggle .toggle-menu-m li .toggle-menu.slide {
+          transform: translateX(90%); }
+
+#slider-left.open {
+  transform: translateX(0); }
+
 /* BLOG */
 @media (max-width: 500px) {
   .blog {

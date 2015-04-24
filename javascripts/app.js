@@ -24,4 +24,10 @@ $('.circulo-exterior').hover(function() {
 		$(".text-circle").toggleClass('hidden');
 		$(".text-circle-hover").toggleClass("hidden");
 	});
-
+/*MENU MOVIL*/
+$(document).ready(function() {
+  $('#button-menu-slide').on('click', function() {
+    $('#slider-left').toggleClass('open');
+    $('.toggle-menu-m').toggleClass('slide');
+  });
+});
