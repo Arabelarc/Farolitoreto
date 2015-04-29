@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0 ;
+}
+
 @font-face {
     font-family: Lato-Light;
     src: url(fonts/Extras/Lato-Light.ttf);
@@ -604,22 +609,19 @@ div > span{
 	background-color:#348609;
 }
 .hoja{
-  width: 64%;
-  position: relative;
-  background-color: white;
-  height: 827px;
+ width: 64%;
+  position: static;
   bottom: -816%;
   left: 2%;
   top: -124px;
-  -webkit-box-shadow: 0px 0px 17px 6px rgba(50, 50, 49, 0.64);
-  -moz-box-shadow: 0px 0px 17px 6px rgba(50, 50, 49, 0.64);
-  box-shadow: 0px 0px 17px 6px rgba(50, 50, 49, 0.64);
-}
-.listaoportunidades{
-	width: 100%;
-	background-image: url(../img/img-oportunidades-24.png);
+ }
 
-}
+.listaoportunidades{
+  width: 100%;
+  background-image: url(../img/img-03.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .text-list-opt{
 	@extend .text-edu;
 	color:#9E9D9D;
@@ -659,7 +661,8 @@ div > span{
 	@extend .contactanos;
 	  background-color: #9E9D9D;
 	  width: 15%;
-	  top: -45px;
+	  top: 45px;
+    margin-bottom: 30%;
 	  font-size: 0.9em;
 	  height: 32px;
 	  font-weight: 800;
