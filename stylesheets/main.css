@@ -7113,6 +7113,9 @@ a {
 #slider-left.open {
   transform: translateX(0); }
 
+a {
+  text-decoration: none !important; }
+
 /* BLOG */
 @media (max-width: 500px) {
   .blog {
@@ -7206,7 +7209,5 @@ a {
 @media (max-width: 500px) {
   .fun-text .puesto {
     font-size: 2.5em; } }
-a {
-  text-decoration: none !important;
-}
+
 /*# sourceMappingURL=main.css.map */

@@ -28,7 +28,6 @@ $('.circulo-exterior').hover(function() {
 $(document).ready(function() {
   $('#button-menu-slide').on('click', function() {
     $('#slider-left').toggleClass('open');
-    $('.toggle-menu-m').toggleClass('slide');
   });
 });
 
